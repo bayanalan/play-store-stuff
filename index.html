@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Store Stuff</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <div class="logo">
+                <h1 class="title-top">PLAY STORE</h1>
+                <h1 class="title-bottom">STUFF</h1>
+            </div>
+            
+            <div class="buttons">
+                <button class="game-button" onclick="scrollToSection('home')">HOME</button>
+                <button class="game-button" onclick="scrollToSection('about')">ABOUT</button>
+                <button class="game-button" onclick="scrollToSection('privacy')">PRIVACY</button>
+                <button class="game-button" onclick="scrollToSection('contact')">CONTACT</button>
+            </div>
+        </div>
+    </div>
+
+    <section id="home" class="content-section">
+        <div class="section-content">
+            <h2>Welcome to Play Store Stuff</h2>
+            <p>Your destination for mobile app development and Play Store optimization.</p>
+            <button class="game-button cta-button" onclick="scrollToSection('about')">Learn More</button>
+        </div>
+    </section>
+
+    <section id="about" class="content-section">
+        <div class="section-content">
+            <h2>About Us</h2>
+            <p>We provide resources, tools, and guidance for developers looking to succeed on the Google Play Store.</p>
+            <div class="feature-list">
+                <div class="feature-item">App Store Optimization</div>
+                <div class="feature-item">Developer Resources</div>
+                <div class="feature-item">Best Practices</div>
+                <div class="feature-item">Compliance Guidelines</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="privacy" class="content-section">
+        <div class="section-content">
+            <h2>Privacy Policy</h2>
+            <div class="privacy-content">
+                <p>This Privacy Policy describes how we collect, use, and protect your information.</p>
+                <button class="game-button" onclick="window.open('privacy-policy.html', '_blank')">Read Full Policy</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="content-section">
+        <div class="section-content">
+            <h2>Contact</h2>
+            <p>Get in touch with us for any questions or support.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="game-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>2024 Play Store Stuff. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
